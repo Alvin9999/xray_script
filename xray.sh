@@ -1749,6 +1749,7 @@ myHelp() {
     echo ""
     yellow "选项:"
     echo ""
+    yellow "menu         打开菜单"
     yellow "help         查看本帮助"
     yellow "install      使用官方脚本 安装/更新 xray"
     yellow "build        编译安装 xray"
@@ -1811,6 +1812,7 @@ action=$1
 [[ -z $1 ]] && action=menu
 
 case "$action" in
+    menu) menu ;;
     help) myHelp;;
     install) install_official ;;
     build) install_build ;;
