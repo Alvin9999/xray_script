@@ -1580,7 +1580,8 @@ EOF
     green " spiderX: 自行访问目标网站，找个靠谱的路径，不懂就填 \"/\" "
     green " shortId: 不懂不填"
     echo ""
-    green " 分享链接： 暂无标准"
+    green " 分享链接："
+    green " vless://${uuid}@${linkIP}:${port}?encryption=none&security=tls&sni=${forwardSiteSNI}&flow=xtls-rprx-vision&pbk=${PublicKey}&fp=ios#REALITY"
     echo ""
     echo ""
     red " 节点二:"
@@ -1598,7 +1599,9 @@ EOF
     green " spiderX: 自行访问目标网站，找个靠谱的路径，不懂就填 \"/\" "
     green " shortId: 不懂不填"
     echo ""
-    green " 分享链接： 暂无标准"
+    green " 分享链接："
+    green " vless://${uuid}@${linkIP}:${port}?encryption=none&security=tls&sni=${forwardSiteSNI}&type=http&flow=xtls-rprx-vision&pbk=${PublicKey}&fp=ios#REALITY"
+
 }
 
 install_build() {
